@@ -4,11 +4,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function WeatherForm({ submitForm }) {
-    const [latitude, setLatitude] = useState('');
-    const [longitude, setLongitude] = useState('');
+    const [latitude, setLatitude] = useState("");
+    const [longitude, setLongitude] = useState("");
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
-    const [unit, setUnit] = useState('Fahrenheit')
+    const [unit, setUnit] = useState("Fahrenheit");
 
     const handleSubmit = (e) => {
         e.preventDefault();

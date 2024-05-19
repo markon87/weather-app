@@ -13,7 +13,7 @@ import { parseISO, isWithinInterval } from "date-fns";
 function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [measurementUnit, setMeasurementUnit] = useState('');
+  const [measurementUnit, setMeasurementUnit] = useState("");
 
   const handleFormSubmit = async({latitude, longitude, startDate, endDate, unit}) => {
     setMeasurementUnit(unit);
